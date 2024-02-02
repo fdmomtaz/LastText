@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.farshadmomtaz.lasttext.HistoryActivity">
+
+    <TextView
+        android:id="@+id/noHistoryText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/activity_history_text_no_messages"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/DeleteAllHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_history_button_delete_history"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:onClick="DeleteHistory" />
+
+    <ListView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp" />
+
+</LinearLayout>
